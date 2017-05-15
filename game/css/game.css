@@ -1,0 +1,204 @@
+/*_settings_conteiner*/
+
+.main_game_conteiner{
+	padding-top: 0px;
+	width: 100%;
+	height: 321px;
+	background: #fff;
+	box-sizing: border-box;
+	/*border: 1px solid red;	*/
+}
+
+.game_conteiner{
+	margin: auto;
+	width: 1024px;
+	height: 100%;
+	box-sizing: border-box;
+	/*border: 1px solid red;	*/
+}
+
+
+.game_title{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	width: 1024px;
+	height: 70px;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	background: #fff;
+	box-sizing: border-box;
+	/*border: 1px solid red;	*/
+}
+.game_header{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 74px;
+	box-sizing: border-box;
+	/*border: 1px solid red;	*/
+	background: #fff;
+}
+
+.select_conteiner{
+	height: 74px;
+	width: 200px;
+	box-sizing: border-box;
+	/*border: 1px solid red;		*/
+}
+
+.switch_sound{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	float: left;
+	/*display: block;*/
+	height: 102px;
+	width: 150px;
+	box-sizing: border-box;
+	/*border: 1px solid red;			*/
+}
+
+.select_level{
+	margin: auto;
+	width: 170px;
+	height: 50%;
+	padding-top: 10px;
+	text-align: center;
+	font-family: verdana, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	overflow: hidden;
+	box-sizing: border-box;
+	/*border: 1px solid red;			*/
+}
+.select{
+	margin: auto;
+	width: 150px;
+	height: 50%;
+	box-sizing: border-box;
+	/*border: 1px solid red;			*/
+}
+.select select{
+	display: flex;
+	/*text-align: center;*/
+	width: 100%;
+	height: 32px;
+	border-radius: 29px;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 3px solid #3D9BE9;
+}
+.select_other {
+	padding-left: 45%;
+}
+.select_speed {
+	padding-left: 30%;
+}
+
+/*.game_name{
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+	float: right;
+	width: 20%;
+	height: 100%;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	box-sizing: border-box;
+	border: 1px solid red;			
+}*/
+
+.game_fild_conteiner{
+	width: 100%;
+	height: 167px;
+	background: #fff;
+	box-sizing: border-box;
+	/*border: 1px solid red;	*/
+}
+
+.game_start_menu_conteiner{
+	display: flex;
+	/*flex-direction: row;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	/*align-content: space-between;*/
+	/*margin: auto;*/
+	box-sizing: border-box;
+	/*border: 1px solid red;*/
+}
+.game_start_menu_button{
+	display: flex;
+	margin: auto;
+	align-items:center;
+	align-content: center;
+	justify-content: center;
+	width: 206px;
+	height: 74px;
+	border-radius: 20px;
+	background: #F26524;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	
+	outline: none;
+	box-shadow: none;
+	border:0;
+	cursor: pointer;
+
+
+	box-sizing: border-box;
+	/*border: 1px solid red;*/
+}
+.game_start_menu_button_text{
+		
+	font-family: verdana, Arial, sans-serif;
+	font-size: 15px;
+	color: #fff;
+	box-sizing: border-box;
+	/*border: 1px solid red;*/
+}
+
+
+
+
+/**************************************************************************
+CSS К файлу game_process.php
+***************************************************************************/
+.game_process_buttons{
+	width: 142px;
+	height: 40px;
+	border-radius: 20px;
+	outline: none;
+	box-shadow: none;
+	border:0;
+	cursor: pointer;
+	color: #fff;
+	/*font-weight: bold;*/
+	font-family: verdana, arial, sans-serif;
+	text-decoration: none;
+}
+.game_process_buttons:hover{
+	text-decoration: none;
+	color:#fff;
+}
+.game_process_check{
+	background: #F26524;
+}
+.game_process_repeat{
+	background: #F9AD3B;
+}
+
+.game_process_exit{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #3D9BE9;
+}

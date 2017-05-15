@@ -1,0 +1,192 @@
+
+.field{
+	display: table;
+	margin: auto;
+	margin-top: 0px;
+	width:95%;
+}
+
+.left{float:left;}
+.kb{width:70px;height:70px;}
+.kb_field{padding-top:20px;}
+.time_field{padding-left:0px;font-weight:bold;}
+#vol{cursor:pointer;}
+
+.answer{position:absolute;left:178px;top:-30px;}
+.new_answer{
+    top: 50%; /* Отступ в процентах от верхнего края окна */
+    left: 50%; /* Отступ в процентах от левого края окна */
+    width: 800px; /* Ширина блока */
+    height: 600px; /* Высота блока */
+    position: absolute; /* Абсолютное позиционирование блока */
+    margin-top: -300px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+    margin-left: -400px; /* Отрицательный отступ от левого края страницы, должен равняться половине высоты блока со знаком минус */
+}
+input[type="text"] {        
+	width:484px;
+	text-align:center;
+	color:#ff0000;
+	font-weight:bold;
+	float:left;
+    line-height: 1.4;
+}
+input.rounded {
+	font-size: 320px;
+	padding: 4px 7px;
+	outline: 0;
+	-webkit-appearance: none;
+}
+.button_style{cursor:pointer}
+#pre{
+    display: block; 
+    z-index: 999;
+}
+.answers{
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.number{
+    color: black;
+    font-weight: bold;
+    font-size: 320px;
+    text-align: center;
+    margin: 30px 50px 30px 0px;
+}
+
+.number {
+	margin: 10px auto;
+	border: 1px dotted red;
+	border: 20px solid transparent;
+    padding: 15px;
+}
+
+.btn-danger {
+	background-color: #0C54A0;
+	background-image: none;
+	border-color: #0C54A0;
+	width: 100px;
+}
+.btn-danger:focus,
+.btn-danger.focus {
+	background-color: #0C54A0;
+	background-image: none;
+	border-color: #0C54A0;
+}
+.btn-danger:hover {
+	background-color: #0C54A0;
+	background-image: none;
+	border-color: #0C54A0;
+}
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+	background-color: #0C54A0;
+	background-image: none;
+	border-color: #0C54A0;
+}
+.btn-danger:active:hover,
+.btn-danger.active:hover,
+.open > .dropdown-toggle.btn-danger:hover,
+.btn-danger:active:focus,
+.btn-danger.active:focus,
+.open > .dropdown-toggle.btn-danger:focus,
+.btn-danger:active.focus,
+.btn-danger.active.focus,
+.open > .dropdown-toggle.btn-danger.focus {
+	background-color: #0C54A0;
+	background-image: none;
+	border-color: #0C54A0;
+}
+
+.btn-primary {
+	background-color: #d9534f;
+	background-image: none;
+	border-color: #d9534f;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+	background-color: #d9534f;
+	background-image: none;
+	border-color: #d9534f;
+}
+.btn-primary:hover {
+	background-color: #d9534f;
+	background-image: none;
+	border-color: #d9534f;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+	background-color: #d9534f;
+	background-image: none;
+	border-color: #d9534f;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+	background-color: #d9534f;
+	background-image: none;
+	border-color: #d9534f;
+}
+
+.btn-success {
+	background-color: orange;
+	background-image: none;
+	border-color: orange;
+	width: 100px;
+}
+
+.btn-success:focus,
+.btn-success.focus {
+	background-color: orange;
+	background-image: none;
+	border-color: orange;
+}
+.btn-success:hover {
+	background-color: orange;
+	background-image: none;
+	border-color: orange;
+}
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+	background-color: orange;
+	background-image: none;
+	border-color: orange;
+}
+.btn-success:active:hover,
+.btn-success.active:hover,
+.open > .dropdown-toggle.btn-success:hover,
+.btn-success:active:focus,
+.btn-success.active:focus,
+.open > .dropdown-toggle.btn-success:focus,
+.btn-success:active.focus,
+.btn-success.active.focus,
+.open > .dropdown-toggle.btn-success.focus {
+	background-color: orange;
+	background-image: none;
+	border-color: orange;
+}
+
+.number_class {
+	border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(images/border.png) 30 round; 
+    -o-border-image: url(images/border.png) 30 round;
+    border-image: url(images/border.png) 30 30 round;
+	display: block;
+	margin: 0 auto;
+	width: 500px;
+	height: 500px;
+}
