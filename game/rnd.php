@@ -6,9 +6,6 @@
 
 class Tasks
 {
-	
-//Функция преобразует массив, содержащий определенные цифры, в массив, который содержащий цифры, которых не было в первом массиве.
-		
 
 	//Функция подсчитывает сумму элементов массива
 	public function sum($array){
@@ -22,7 +19,7 @@ class Tasks
 /**
 *	Функция принимает число, которое обозначает количество цифр в возвращаемом максимальном числе. Функция возвращает максимальное число при указанном количестве цифр.
 	*/
-	public function max_num($len)
+	private function max_num($len)
 	{
 		$max="9";
 		for($i=1; $i<$len; $i++){
@@ -57,113 +54,77 @@ class Tasks
 		return $array;
 	}
 
-public function add1($rnd1){
+private function simple_add($rnd1){
 		switch ($rnd1){
 		case 0:
-			$num=[1,2,3,4,6,7,8,9,0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
+			$num=[1,2,3,4,5,6,7,8,9,0];
 			break;
 		case 1:
 			$num=[1,2,3,5,6,7,8,0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 2:
 			$num=[1,2,5,6,7,0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 3:
 			$num=[1,5,6,0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 4:
 			$num=[5,0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 5:
 			$num=[1,2,3,4,0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 6:
 			$num=[1,2,3, 0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 7:
 			$num=[1,2, 0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 8:
 			$num=[1, 0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 9:
-		$num=[0];
+			$num=[0];
+		}
 		$key=array_rand($num);
-		$rnd2=$num[$key];
-		}		
+		$rnd2=$num[$key];		
 		return $rnd2;
 	}
 
-	public function add2($rnd1){
+	private function simple_sub($rnd1){
 		switch ($rnd1){
 		case 0:
 			$num=[0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 1:
 			$num=[1, 0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 2:
 			$num=[1,2, 0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 3:
 			$num=[1,2,3,0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 4:
 			$num=[1,2,3,4,0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 5:
 			$num=[5,0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 6:
 			$num=[1,5,6,0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 7:
 			$num=[1,2,5,6,7,0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 8:
 			$num=[1,2,3,5,6,7,8,0];
-			$key=array_rand($num);
-			$rnd2=$num[$key];
 			break;
 		case 9:
-		$num=[1,2,3,4,5,6,7,8,9,0];
+			$num=[1,2,3,4,5,6,7,8,9,0];
+		}
 		$key=array_rand($num);
-		$rnd2=$num[$key];
-		}		
+		$rnd2=$num[$key];		
 		return $rnd2;
 	}
 	
@@ -177,54 +138,36 @@ public function simple_add_sub($len=1,$summands=2){
 				switch ($rnd1){
 			case 0:
 				$num=[1,2,3,4,5,6,7,8,9];
-				$key=array_rand($num);
-				$rnd2=$num[$key];
 				break;
 			case 1:
 				$num=[1,2,3,5,6,7,8,-1];
-				$key=array_rand($num);
-				$rnd2=$num[$key];
 				break;
 			case 2:
 				$num=[1,2,5,6,7,-1,-2];
-				$key=array_rand($num);
-				$rnd2=$num[$key];
 				break;
 			case 3:
 				$num=[1,5,6, -1, -2, -3];
-				$key=array_rand($num);
-				$rnd2=$num[$key];
 				break;
 			case 4:
 				$num=[5, -1, -2, -3, -4];
-				$key=array_rand($num);
-				$rnd2=$num[$key];
 				break;
 			case 5:
 				$num=[1, 2, 3, 4, -5];
-				$key=array_rand($num);
-				$rnd2=$num[$key];
 				break;
 			case 6:
 				$num=[1, 2, 3, -1, -5, -6];
-				$key=array_rand($num);
-				$rnd2=$num[$key];
 				break;
 			case 7:
 				$num=[1, 2, -1,-2, -5, 	-6, -7];
-				$key=array_rand($num);
-				$rnd2=$num[$key];
 				break;
 			case 8:
 				$num=[1, -1, -2, -3, -5, -6, -7, -8];
-				$key=array_rand($num);
-				$rnd2=$num[$key];
 				break;
 			case 9:
 				$num=[-1,-2,-3,-4,-5,-6,-7,-8,-9];
-				$key=array_rand($num);
-				$rnd2=$num[$key];
-			}	
+		}
+		$key=array_rand($num);
+		$rnd2=$num[$key];	
 		$rnd[]=$rnd2;
 		$rnd1=$this->sum($rnd);
 		}
@@ -233,195 +176,284 @@ public function simple_add_sub($len=1,$summands=2){
 	else{
 		$rnd1=mt_rand(10, 99);
 		$rnd[]=$rnd1;
-		$rnd1_ca=$this->cifra_array($rnd1);
+		$rnd1_ca=$this->cifra_array($rnd1);//Функция разбивает число на цифры и записывает их в массив
 		for($i=2; $i<=$summands; $i++){
-			do{
+			do
+			{
 				switch ($rnd1_ca[1]){
-			case 0:
-				$num=[1,2,3,4,5,6,7,8,9,0];
+					case 0:
+						$num=[1,2,3,4,5,6,7,8,9,0];
+						break;
+					
+					case 1:
+						$num=[1,2,3,5,6,7,8,-1,0];
+						break;
+					
+					case 2:
+						$num=[1,2,5,6,7,-1,-2,0];
+						break;
+					
+					case 3:
+						$num=[1,5,6, -1, -2, -3,0];
+						break;
+					
+					case 4:
+						$num=[5, -1, -2, -3, -4,0];
+						break;
+					
+					case 5:
+						$num=[1, 2, 3, 4, -5,0];
+						break;
+					
+					case 6:
+						$num=[1, 2, 3, -1, -5, -6,0];
+						break;
+					
+					case 7:
+						$num=[1, 2, -1,-2, -5, 	-6, -7,0];
+						break;
+					
+					case 8:
+						$num=[1, -1, -2, -3, -5, -6, -7, -8,0];
+						break;
+					
+					case 9:
+						$num=[-1,-2,-3,-4,-5,-6,-7,-8,-9,0];
+				}
 				$key=array_rand($num);
 				$rnd2_ca[1]=$num[$key];
 				if($rnd2_ca[1]>=0)
-					$rnd2_ca[0]=$this->add1($rnd1_ca[0]);
+					$rnd2_ca[0]=$this->simple_add($rnd1_ca[0]);
 				else
-					$rnd2_ca[0]=$this->add2($rnd1_ca[0]);
-				break;
-			case 1:
-				$num=[1,2,3,5,6,7,8,-1,0];
-				$key=array_rand($num);
-				$rnd2_ca[1]=$num[$key];
-				if($rnd2_ca[1]>=0)
-					$rnd2_ca[0]=$this->add1($rnd1_ca[0]);
-				else
-					$rnd2_ca[0]=$this->add2($rnd1_ca[0]);
-				break;
-			case 2:
-				$num=[1,2,5,6,7,-1,-2,0];
-				$key=array_rand($num);
-				$rnd2_ca[1]=$num[$key];
-				if($rnd2_ca[1]>=0)
-					$rnd2_ca[0]=$this->add1($rnd1_ca[0]);
-				else
-					$rnd2_ca[0]=$this->add2($rnd1_ca[0]);
-				break;
-			case 3:
-				$num=[1,5,6, -1, -2, -3,0];
-				$key=array_rand($num);
-				$rnd2_ca[1]=$num[$key];
-				if($rnd2_ca[1]>=0)
-					$rnd2_ca[0]=$this->add1($rnd1_ca[0]);
-				else
-					$rnd2_ca[0]=$this->add2($rnd1_ca[0]);
-				break;
-			case 4:
-				$num=[5, -1, -2, -3, -4,0];
-				$key=array_rand($num);
-				$rnd2_ca[1]=$num[$key];
-				if($rnd2_ca[1]>=0)
-					$rnd2_ca[0]=$this->add1($rnd1_ca[0]);
-				else
-					$rnd2_ca[0]=$this->add2($rnd1_ca[0]);
-				break;
-			case 5:
-				$num=[1, 2, 3, 4, -5,0];
-				$key=array_rand($num);
-				$rnd2_ca[1]=$num[$key];
-				if($rnd2_ca[1]>=0)
-					$rnd2_ca[0]=$this->add1($rnd1_ca[0]);
-				else
-					$rnd2_ca[0]=$this->add2($rnd1_ca[0]);
-				break;
-			case 6:
-				$num=[1, 2, 3, -1, -5, -6,0];
-				$key=array_rand($num);
-				$rnd2_ca[1]=$num[$key];
-				if($rnd2_ca[1]>=0)
-					$rnd2_ca[0]=$this->add1($rnd1_ca[0]);
-				else
-					$rnd2_ca[0]=$this->add2($rnd1_ca[0]);
-				break;
-			case 7:
-				$num=[1, 2, -1,-2, -5, 	-6, -7,0];
-				$key=array_rand($num);
-				if($rnd2_ca[1]>=0)
-					$rnd2_ca[0]=$this->add1($rnd1_ca[0]);
-				else
-					$rnd2_ca[0]=$this->add2($rnd1_ca[0]);
-				$rnd2_ca[1]=$num[$key];
-				break;
-			case 8:
-				$num=[1, -1, -2, -3, -5, -6, -7, -8,0];
-				$key=array_rand($num);
-				$rnd2_ca[1]=$num[$key];
-				if($rnd2_ca[1]>=0)
-					$rnd2_ca[0]=$this->add1($rnd1_ca[0]);
-				else
-					$rnd2_ca[0]=$this->add2($rnd1_ca[0]);
-				break;
-			case 9:
-				$num=[-1,-2,-3,-4,-5,-6,-7,-8,-9,0];
-				$key=array_rand($num);
-				$rnd2_ca[1]=$num[$key];
-				if($rnd2_ca[1]>=0)
-					$rnd2_ca[0]=$this->add1($rnd1_ca[0]);
-				else
-					$rnd2_ca[0]=$this->add2($rnd1_ca[0]);
+					$rnd2_ca[0]=$this->simple_sub($rnd1_ca[0]);
+				$rnd2_ca0=(string)$rnd2_ca[0];
+				$minus=1;
+				if($rnd2_ca[1]<0){
+					$rnd2_ca[1]=-$rnd2_ca[1];
+				$minus=-1;
+				}
+				$rnd2_ca1=(string)$rnd2_ca[1];
+				$rnd2=$rnd2_ca0.$rnd2_ca1;
+				$rnd2=(int)$rnd2;
+				$rnd2=$rnd2*$minus;
+				$flag=true;
+				if($rnd2==0)
+					$flag=false;
 			}
-		$rnd2_ca0=(string)$rnd2_ca[0];
-		$minus=1;
-		if($rnd2_ca[1]<0){
-			$rnd2_ca[1]=-$rnd2_ca[1];
-			$minus=-1;
-		}
-		$rnd2_ca1=(string)$rnd2_ca[1];
-		$rnd2=$rnd2_ca0.$rnd2_ca1;
-		$rnd2=(int)$rnd2;
-		$rnd2=$rnd2*$minus;
-		$flag=true;
-		if($rnd2==0)
-			$flag=false;
-	}
-	while ( $flag=== false);
-		$rnd[]=$rnd2;
-		$rnd1=$this->sum($rnd);
-		$rnd1_ca=$this->cifra_array($rnd1);
-		}
-	return $rnd;
-	}
+			while ( $flag=== false);
+				$rnd[]=$rnd2;
+				$rnd1=$this->sum($rnd);
+				$rnd1_ca=$this->cifra_array($rnd1);
+				}
+			return $rnd;
+			}
 }
 
 //Сложение и вычитание: малые друзья
 
-public function small_friends_add_sub($len=1,$summands=2){
+//Функция генерирует случайные числа, которые состоят либо из цифр от 1 до 4, либо из цифр от 5 до 8
+private function rnd_1458(){
+	$array=[[1, 2, 3, 4], [5, 6, 7, 8]];
+	$key=rand(0, 1);
+	$key_cf=array_rand($array[$key]);
+	$cf0=$array[$key][$key_cf];
+	$cf0=(string)$cf0;
+	$key_cf=array_rand($array[$key]);
+	$cf1=$array[$key][$key_cf];
+	$cf1=(string)$cf1;
+	$num=$cf0.$cf1;
+	$num=(int)$num;
+	return $num;
+}
+
+private function small_friends_add($rnd1){
+		switch ($rnd1){
+		case 0:
+			$num=[0];
+			break;
+		case 1:
+			$num=[4,0];
+			break;
+		case 2:
+			$num=[3,4,0];
+			break;
+		case 3:
+			$num=[2,3,4,0];
+			break;
+		case 4:
+			$num=[1,2,3,4,0];
+			break;
+		case 5:
+			$num=[0];
+			break;
+		case 6:
+			$num=[0];
+			break;
+		case 7:
+			$num=[0];
+			break;
+		case 8:
+			$num=[0];
+			break;
+		case 9:
+		$num=[0];
+		}
+		$key=array_rand($num);
+		$rnd2=$num[$key];		
+		return $rnd2;
+	}
+
+	private function small_friends_sub($rnd1){
+		switch ($rnd1){
+		case 0:
+			$num=[0];
+			break;
+		case 1:
+			$num=[0];
+			break;
+		case 2:
+			$num=[0];
+			break;
+		case 3:
+			$num=[0];
+			break;
+		case 4:
+			$num=[0];
+			break;
+		case 5:
+			$num=[1, 2, 3, 4, 0];
+			break;
+		case 6:
+			$num=[2, 3, 4, 0];
+			break;
+		case 7:
+			$num=[3, 4, 0];
+			break;
+		case 8:
+			$num=[4, 0];
+			break;
+		case 9:
+			$num=[0];
+		}
+		$key=array_rand($num);
+		$rnd2=$num[$key];
+		return $rnd2;
+	}
+	
+	public function small_friends_add_sub($len=1,$summands=2){
 	if($len==1){
-		$rnd1=mt_rand(1, 9);
-		$rnd[0]=$rnd1;
-
-		for ($i=2; $i<=$summands; $i++){
-
-			do {
-				$rnd2=mt_rand(-9, 9);
-			} while ( $rnd2==0);
-
-		$rnd_summ_previous=$this->sum($rnd);
-		$rnd_summ_now=$rnd_summ_previous+$rnd2;
-		if(($rnd_summ_now>=0)&&($rnd_summ_now<=9))
-			$rnd[]=$rnd2;
-		else
-			$i--;
-		}	
+		$rnd1=mt_rand(1, 8);
+		$rnd[]=$rnd1;
+		for($i=2; $i<=$summands; $i++){
+				switch ($rnd1){
+			case 1:
+				$num=[4];
+				break;
+			case 2:
+				$num=[3, 4];
+				break;
+			case 3:
+				$num=[2, 3, 4];
+				break;
+			case 4:
+				$num=[1, 2, 3, 4];
+				break;
+			case 5:
+				$num=[-1,-2,-3,-4];
+				break;
+			case 6:
+				$num=[-2,-3,-4];
+				break;
+			case 7:
+				$num=[-3,-4];
+				break;
+			case 8:
+				$num=[-4];
+			}
+		$key=array_rand($num);
+		$rnd2=$num[$key];
+		$rnd[]=$rnd2;
+		$rnd1=$this->sum($rnd);
+		}
 	return $rnd;
 	}
 	else{
-		$rnd1=mt_rand(1, 99);
-		$rnd[0]=$rnd1;
-		for($i=2; $i<=$summands; $i++)
-		{
-			$rnd_summ=$this->sum($rnd);
-			$rnd_summ_cf=$this->cifra_array($rnd_summ);
-			if(strlen($rnd_summ)==1){
-				$rnd_summ_cf[0]=0;
-				$rnd_summ_cf[1]=$rnd_summ;
+		$rnd1=$this->rnd_1458();//Функция генерирует случайные числа, которые состоят либо из цифр от 1 до 4, либо из цифр от 5 до 8
+		$rnd[]=$rnd1;
+		$rnd1_ca=$this->cifra_array($rnd1);//Функция разбивает число на цифры и записывает их в массив
+		for($i=2; $i<=$summands; $i++){
+			do
+			{
+				switch ($rnd1_ca[0]){
+					case 0:
+						$num=[0];
+						break;
+					
+					case 1:
+						$num=[4,0];
+						break;
+					
+					case 2:
+						$num=[3,4,0];
+						break;
+					
+					case 3:
+						$num=[2, 3, 4,0];
+						break;
+					
+					case 4:
+						$num=[1, 2, 3, 4, 0];
+						break;
+					
+					case 5:
+						$num=[-1, -2, -3, -4, 0];
+						break;
+					
+					case 6:
+						$num=[-2,-3,-4,0];
+						break;
+					
+					case 7:
+						$num=[-3,-4,0];
+						break;
+					
+					case 8:
+						$num=[-4,0];
+						break;
+					
+					case 9:
+						$num=[0];
+				}
+				
+				$key=array_rand($num);
+				
+				$rnd2_ca[0]=$num[$key];
+				if($rnd2_ca[0]>=0)
+					$rnd2_ca[1]=$this->small_friends_add($rnd1_ca[1]);
+				else
+					$rnd2_ca[1]=$this->small_friends_sub($rnd1_ca[1]);
+				$rnd2_ca1=(string)$rnd2_ca[1];
+				$minus=1;
+				if($rnd2_ca[0]<0){
+					$rnd2_ca[0]=-$rnd2_ca[0];
+					$minus=-1;
+				}
+				$rnd2_ca0=(string)$rnd2_ca[0];		
+				
+				$rnd2=$rnd2_ca0.$rnd2_ca1;
+				$rnd2=(int)$rnd2;
+				$rnd2=$rnd2*$minus;
+				$flag=true;
+				if($rnd2==0)
+					$flag=false;
 			}
-			
-			do{
-			$rnd2=mt_rand(-99, 99);
-			}
-			while($rnd2==0);
-			$rnd2_cf=$this->cifra_array($rnd2);
-			if(strlen($rnd2)==1){
-				$rnd2_cf[0]=0;
-				$rnd2_cf[1]=$rnd2;
-			}
-
-			$minus=1;
-			if($rnd2<0)
-				$minus=-1;
-
-			if(($rnd_summ_cf[0]+$rnd2_cf[0]*$minus)<0){
-				$i--;
-				continue;
-			}
-
-			if(($rnd_summ_cf[1]+$rnd2_cf[1]*$minus)<0){
-				$i--;
-				continue;
-			}
-
-			if(($rnd_summ_cf[0]+$rnd2_cf[0]*$minus)>9){
-				$i--;
-				continue;
-			}
-
-			if(($rnd_summ_cf[1]+$rnd2_cf[1]*$minus)>9){
-				$i--;
-				continue;
-			}
-		$rnd[]=$rnd2;
+			while ( $flag===false);
+			$rnd[]=$rnd2;
+			$rnd1=$this->sum($rnd);
+			$rnd1_ca=$this->cifra_array($rnd1);
 		}
- 
- return $rnd;
-}
+	return $rnd;
+	}
 }
 
 //Сложение и вычитание: семья
